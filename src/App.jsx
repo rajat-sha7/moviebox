@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Homepage from './pages/HomePage.jsx';
 import DetailCard from './pages/detailCard';
+import Homepage from './pages/Homepage.jsx';
 
 function App() {
   return (
