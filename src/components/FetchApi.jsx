@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import MovieCard from './movieCard';
+import MovieCard from './MovieCard';
 import { Link } from 'react-router-dom';
 // import DetailMovieCard from './DetailedMovieCard';
 import MovieSlider from './MovieSlider';
