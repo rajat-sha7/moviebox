@@ -1,0 +1,186 @@
+@import '@splidejs/react-splide/css';
+dl,
+ol,
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  gap: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__backdrop {
+    margin: 0;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0) 21%, rgba(0, 0, 0, 1) 78%);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__watchbtn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: transparent;
+      padding: 15px 30px;
+      margin: 1rem 0;
+      border-radius: 10px;
+      color: white;
+      white-space: nowrap;
+      font-size: 1.1rem;
+      backdrop-filter: blur(6px);
+      outline: none;
+      border: 1px solid white;
+      font-weight: 600;
+      transition: .3s all;
+      & span{
+        transition: .3s all;
+      }
+      & svg{
+        transition: .3s all;
+      }
+      &:hover{
+        background: white;
+        color: black;
+        & span{
+          background: white;
+          color: black;
+        }
+        & svg{
+          background-color:white ;
+          fill: black;
+        }
+      }
+      
+    }
+  }
+
+  &__desc {
+    width: 30%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 90%;
+    padding: 1rem 1rem 1rem 2.5rem;
+    text-align: left;
+    gap: 1rem;
+    z-index: 10;
+  }
+
+  &__title {
+    font-size: 28px;
+  }
+
+  &__genres {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__overview {
+    background-color: inherit;
+  }
+
+  &__label {
+    font-weight: 600;
+    position: relative;
+    padding-left: 16px;
+
+    &::after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: whitesmoke;
+      left: 5px;
+      top: 10px;
+      margin: auto;
+    }
+  }
+
+  &__lang {
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background: #ffffff29;
+  }
+
+  &__cast {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    &__card{
+      display: flex;
+      flex-direction: column;
+    }
+    &__img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      // object-fit: cover;
+      object-position: top;
+    }
+  }
+}

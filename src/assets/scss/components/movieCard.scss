@@ -1,0 +1,59 @@
+.card {
+  max-width: 18%;
+  border-radius: 7px;
+  text-align: center;
+
+  &__fig {
+    margin: 0;
+    transition: .3s all;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 345px;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin: 5px auto 15px;
+  }
+
+  &__wrapper {
+    max-width: 1272px;
+    padding-inline: 1rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    &__btns {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+
+      & .btn {
+        padding: 15px 22px;
+        border-radius: 50px;
+        outline: none;
+        background: transparent;
+        margin: 1rem 0;
+        color: white;
+        font-size: 1.1rem;
+        backdrop-filter: blur(6px);
+        border: 1px solid white;
+        font-weight: 600;
+        width: 200px;
+      }
+    }
+  }
+
+}
